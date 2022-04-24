@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="">
+    <link rel="stylesheet" href="style.css">
+    <title>Dating App</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="" class="active">Home</a>
+            <a href="#form" class="menu-hover">Fill Form</a>
+            <a href="" class="logo">Dating Form</a>
+            <a href="#about" class="menu-hover">About</a>
+            <a href="#help" class="menu-hover">Help</a>
+        </nav>
+
+        <div class="container">
+
+            <div class="text">
+                <h1>Online dating Made easy</h1>
+                <a href="#form">Fill Form</a>
+            </div>
+
+            <div class="image"><img src="Images/indraw love chat.svg" alt="" class="chat-image"></div>
+
+        </div>
+
+    </header>
+
+    <main id="form">
+        <div class="form-container">
+            <fieldset>
+                <legend>Dating Application Form</legend>
+
+                <p style="color: red; margin: 0 0 10px 0;">* indicates required field</p>
+
+                <form action="index.html" autocomplete="off">
+
+                    <label for="fname">Full Name*</label>
+                    <input type="text" class="input" name="fname" placeholder="Enter Your Full Name" required>
+
+                    <label for="email">Email*</label>
+                    <input type="email" class="input" name="email" pattern="[a-z]{@}" placeholder="Enter Your Email"
+                        required>
+
+                    <label for="mobile">Mobile Number*</label>
+                    <input type="tel" class="input" name="mobile" placeholder="10 digit Number starts with 6-9"
+                        pattern="[6789][0-9]{9}" maxlength="10" required>
+
+
+                    <div class="radio">
+
+                        <label class="select-gender">Select Your Gender*</label><br>
+
+                        <div class="radio-button">
+
+                            <div>
+                                <input type="radio" name="gender" required>
+                                <label for="gender">Male</label>
+                            </div>
+
+                            <div>
+                                <input type="radio" name="gender">
+                                <label for="gender">Female</label>
+                            </div>
+
+                            <div>
+
+                                <input type="radio" name="gender">
+                                <label for="gender">other</label>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <label for="fname">Height (In Feets)* </label>
+                    <input type="number" class="input" name="fname" placeholder="Enter Your Height (Feets) " max="10"
+                        pattern="[0-9]{2}" required>
+
+
+                    <label for="propose">Date of proposed outing*</label><br>
+                    <input type="date" name="propose" class="date" required>
+
+                    <div class="checkbox">
+
+
+                        <div class="check-label">
+                            <label>Check all that apply to you:</label>
+                        </div>
+
+
+                        <div class="checkboxes">
+                            <input type="checkbox" name="checkbox">
+                            <label>I have tattoos and/or piercings </label>
+                        </div>
+
+                        <div class="checkboxes">
+
+                            <input type="checkbox" name="checkbox">
+                            <label for="checkbox">I am more than 2 years older than my daughter</label>
+
+                        </div>
+
+
+                        <div class="checkboxes">
+
+                            <input type="checkbox" name="checkbox">
+                            <label for="checkbox">I own a panel van or Ferrari</label>
+                        </div>
+
+                        <div class="checkboxes">
+
+                            <input type="checkbox" name="checkbox" size="20px">
+                            <label for="checkbox">I work full-time</label>
+                        </div>
+
+                        <div class="checkboxes">
+
+                            <input type="checkbox" name="checkbox">
+                            <label for="checkbox">My parents are rich</label>
+                        </div>
+
+                        <div class="radio">
+
+                            <label class="select-gender">Select dating location*</label><br>
+
+                            <div class="radio-button">
+
+                                <div>
+                                    <input type="radio" name="location" required>
+                                    <label for="location">Public</label>
+                                </div>
+
+                                <div>
+                                    <input type="radio" name="location">
+                                    <label for="location">Private</label>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="education">
+
+                        <label for="eductaion">Select Your Education*</label>
+
+                        <select name="eductaion" id="" class="input" required>
+                            <option value="">Select Your Education</option>
+                            <option value="">HSC</option>
+                            <option value="">Graduation</option>
+                            <option value="">Post Graduation</option>
+                        </select>
+
+                        <!-- 
+                        <input type="text" class="input" name="fname" placeholder="Enter Your Education"> -->
+                    </div>
+
+                    <div class="textarea">
+                        <label for="textarea">Why do you want to date my daughter?*</label>
+                        <textarea name="textarea" id="" cols="30" rows="10" class="input"
+                            placeholder="Enter Your Opinion" required></textarea>
+                    </div>
+
+                    <label for="url">Social Media Profile link* </label><br>
+                    <input type="url" name="url" class="input" placeholder="Enter yout Social Media Profile link"
+                        required>
+
+
+                    <div>
+                        <label for="statement">Upload Your Bank Statement (only pdf)*</label>
+                        <input type="file" accept=".pdf" class="input" name="Statement" required>
+                    </div>
+
+                    <div class="submit">
+                        <input type="submit">
+                    </div>
+                </form>
+            </fieldset>
+        </div>
+    </main>
+
+    <section id="about">
+
+        <div class="about-heading">
+
+            <h1>Why Choose Us?</h1>
+
+        </div>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <div class="card-content">
+
+                    <div class="card-image">
+                        <img src="Images/trust.png" alt="">
+                    </div>
+
+                    <div class="card-heading">
+                        <h3>Trust Worthy</h3>
+                    </div>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt sit fuga cumque ullam nam
+                        nisi
+                        eaque repudiandae at explicabo eius, quas ab alias dolore veniam in facilis omnis sint
+                        voluptatem?
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <div class="card-content">
+
+                    <div class="card-image">
+                        <img src="Images/check.png" alt="">
+                    </div>
+
+                    <div class="card-heading">
+                        <h3>Genuine Profiles</h3>
+                    </div>
+
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem, odit perspiciatis explicabo
+                        recusandae quam suscipit labore ratione, quisquam fuga, nostrum dignissimos! Iusto, iure quas!
+                        Nam
+                        deserunt labore doloremque aliquam animi. </p>
+
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <div class="card-content">
+
+                    <div class="card-image">
+                        <img src="Images/info.png" alt="">
+                    </div>
+
+                    <div class="card-heading">
+                        <h3>24*7 Help</h3>
+                    </div>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quia cum perspiciatis sapiente
+                        facilis officiis quam explicabo est, libero eos amet magni mollitia rem pariatur placeat
+                        veritatis
+                        illo dolorem perferendis. </p>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <footer id="help">
+        <h1>We Are Here for Help to You</h1>
+        <hr>
+        <div class="social-media">
+
+            <div class="icons">
+                <div>
+                <h1>Address</h1>
+            </div>
+
+                <div>
+                    <p>Delhi, India
+                </div>
+                
+                <div>
+                    <p class="pune">South Delhi</p>
+                </div>
+            </div>
+
+            <div class="icons">
+                <div>
+                <h1>Follow us on</h1>
+            </div>
+                <div class="social-icons">
+                    <div class="soc">
+                        <a href="https://www.facebook.com" target="_blank">Facebook</a>
+                    </div>
+                    <div class="soc">
+                        <a href="https://www.instagram.com" target="_blank">Instagram</a>
+                    </div>
+                    <div class="soc">
+                        <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="icons">
+                <div>
+                <h1>Contact Us</h1>
+            </div>
+
+                <div class="contact-buttons">
+                <div class="mail"><a href="mailto:tripathisachinn@gmail.com">Mail Us</a> </div>
+                <div class="call"> <a href="tel:8700686060"> Call Now</a> </div>
+            </div>
+
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright &copy; Sachin Tripathi</p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
